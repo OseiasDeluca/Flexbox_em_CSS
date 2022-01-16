@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Basis </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+   <h1>Flex Basis: Auto</h1>
+   <div class="flex-container">
+       <div class="itens bauto fg-1">A</div> <!--Elemento crescendo mais que os outros e tendo um crescimento automático que tenta se ajustar ao container.-->
+       <div class="itens bauto fg-1">BBB</div>
+       <div class="itens bauto fg-1">C</div>
+       <div class="itens bauto fg-2">DEF</div>
+   </div>
+
+   <h1>0 (zero)</h1>
+   <div class="flex-container">
+       <div class="itens b-0 fg-1">AAASASDASF</div> <!--Vejamos que quando temos um flex basis = 0, e todos o flex-grow são proporcionais, ele vai colocar que todos os itens tenha um fator de crescimento referente. iSSO ACONTECERÁ ATÉ ELE TENTAR AO MÁXIMO A PROPORCIONALIDADE.-->
+       <div class="itens b-0 fg-1">BBB</div>
+       <div class="itens b-0 fg-1">C</div>
+       <div class="itens b-0 fg-1">DEF</div>
+   </div>
+
+   <h1>Flex Basis + width</h1>
+   <div class="flex-container">
+       <!--Como nosso flex-basis é 100px, todos os itens tem 100px antes de ter a sua distribuição definida-->
+       <!--Aqui com a adição do flex-grow: 2; o fator de crescimento do container tentará todo espaço do container e distribuirá os itens -->
+       <div class="itens w100 fg-0">AA</div>
+       <div class="itens w100 fg-0">BBB</div>
+       <div class="itens w100 fg-0">CCC</div>
+       <div class="itens w100 fg-0">DEF</div>
+   </div>
+</body>
+</html>

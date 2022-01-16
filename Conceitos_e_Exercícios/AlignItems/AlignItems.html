@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Items</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>ROW</h1>
+    <p>Center</p>
+    <section class="container center"> <!--Com nossa declaração flex: 1, independente de quantas letras colocarmos, eles irá se ajustar, respeitando a margem central e o tamanho da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+
+    <p>Stretch</p><!--Essa propreidade vai fazer com que os itens cresçam igualmente, tendo como parâmetro o maior item.-->
+    <section class="container stretch"> 
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Flex-start</p>
+    <section class="container start"> <!--Orientação de seguir os item tendo como base a parte superior da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Flex-end</p>
+    <section class="container end"> <!--Orientação de seguir os item tendo como base a parte inferior da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline"> <!--Para alinhar verticalmente o conteudo de uma celula em uma tabela:-->
+        <div class="item">Item 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam blanditiis quos hic cupiditate rerum voluptates tenetur iste doloremque, sit, corrupti ipsam error quisquam quia aliquid dicta quo dolorum magnam. Soluta?</div>
+        <div class="item">Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </section>
+
+    <h1>COLUMN</h1>
+
+    <p>Flex-start</p>
+    <section class="container start column"> <!--Orientação de seguir os item tendo como base a parte direita da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Flex-end</p>
+    <section class="container end column"> <!--Orientação de seguir os item tendo como base a parte esquerda da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Center</p>
+    <section class="container center column"> <!--Com nossa declaração flex: 1, independente de quantas letras colocarmos, eles irá se ajustar, respeitando a margem central e o tamanho da borda.-->
+        <div class="item">Item 1</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div class="item">Item 3</div>
+    </section>
+
+    <p>Baseline</p>
+    <section class="container baseline column"> <!--Para alinhar verticalmente o conteudo de uma celula em uma tabela:-->
+        <div class="item">Item 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam blanditiis quos hic cupiditate rerum voluptates tenetur iste doloremque, sit, corrupti ipsam error quisquam quia aliquid dicta quo dolorum magnam. Soluta?</div>
+        <div class="item">Item 3</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </section>
+
+    <p>Alinhamento central à tela</p>
+    
+    <section class="container central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cum eum voluptas corporis, quasi ad molestiae minus reprehenderit consectetur rem maxime natus inventore nisi ex omnis saepe odit, iusto soluta.
+        </div>
+    </section>
+</body>
+</html>

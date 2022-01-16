@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex Shrink </title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Flex-Shrink: 1</h1>
+    <div class="flex-container">
+       <div class="item s-1 fg-1">A</div>
+       <div class="item s-1 fg-1">B</div>
+       <div class="item s-1 fg-1">C</div>
+       <div class="item s-1 fg-1">D</div>
+       <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <h1>Flex-Shrink </h1>
+    <div class="flex-container">
+       <div class="item s-1 fg-1">A</div>
+       <div class="item s-1 fg-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+       <div class="item s-1 fg-1">C</div>
+       <div class="item s-1 fg-1">D</div>
+       <div class="item s-1 fg-1">E</div>
+    </div>
+
+    <h1>Flex-Shrink: 0 & Basis: 100px;</h1>
+    <!--O que fizemos, foi dizer que o item precisa ter o minímo de 100px e também que ele não poderá quebrar o item(compressão)-->
+    <div class="flex-container">
+        <div class="item s-0 fg-1">A</div>
+        <div class="item s-0 fg-1">B</div>
+        <div class="item s-0 fg-1">Lorem ipsum dolor sit amet</div>
+        <div class="item s-0 fg-1">D</div>
+        <div class="item s-0 fg-1">E</div>
+    </div>
+
+    <h1>Flex-Shrink:</h1>
+    <div class="flex-container">
+        <!--Item diferente, e cada propriedade dita algo diferente para eles. Itens que possuem a classe Shrink 2, que eles podem ser comprimidos por até 2 vezes, tal qual seja possível.-->
+        <div class="item s-1 fg-1">A</div>
+        <div class="item s-2 fg-1">Lorem ipsum dolor</div>
+        <div class="item s-2 fg-1">C</div>
+        <div class="item s-3 fg-1">D</div>
+    </div>
+</body>
+</html>

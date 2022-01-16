@@ -1,0 +1,50 @@
+.flex-container{
+    display: flex;
+    max-width: 350px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.flex-container2{
+    display: flex;
+    max-width: 350px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    align-items: center; /* Mesmo definido sempre será respeitado o que vem do container*/
+}
+.item{
+    flex: 1;
+    background: brown;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    margin: 5px;
+}
+
+.center{
+    align-self: center;
+}
+
+.start{
+    align-self: flex-start;
+}
+
+.end{
+    align-self: flex-end;
+}
+
+.auto{
+    align-self: auto;
+}
+
+.stretch{
+    align-self: stretch;
+}
+
+.basiline{
+    align-self: baseline;
+}
+
+.column{
+    flex-direction: column;
+}

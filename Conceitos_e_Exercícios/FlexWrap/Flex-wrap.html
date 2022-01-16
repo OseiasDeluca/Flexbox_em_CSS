@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Flex-wrap</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>No wrap</h1>
+    <div class="flex-container nowrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div> <!--Objeto vazado, mas respeitando horizontabilidade(pois é filho do container)-->
+    </div>
+
+    <h1>Wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div> 
+
+        <!--Como definimos altura é normal que tenha essa quebra, se removemos ela, as divs ficaram alocadas corretamente, sem rompimentos.-->
+        <!-- Tirei as divs extra para retornar a aula, mas para testar, retire do comentário e retire no .flex-container o height:1250px.        <div class="item orange">4</div> 
+        <div class="item orange">4</div> 
+        <div class="item orange">4</div> 
+        <div class="item orange">4</div> 
+        -->
+    </div>
+
+    <h1>Wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+        <div class="item orange">1</div>
+        <div class="item green">2</div>
+        <div class="item blue">3</div>
+        <div class="item orange">4</div>
+    </div>
+</body>
+</html>

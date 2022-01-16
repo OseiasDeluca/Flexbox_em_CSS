@@ -1,0 +1,51 @@
+.flex-container{
+      display: flex;
+      flex-direction: column; /* Com essa alteração nada mudou no "NOWRAP" tudo normal, já no WRAP E NO WRAP REVERSE, houve uma alteração significativa. */
+      height: 150px; 
+      border: 2px solid black;
+      max-width: 310px; /* Tamanho não comportado, mas vai respeitar e será jogado pela linha de baixo */
+      /* max-width: 300px - Vai comprimir enquanto tivermos espaço no container, só que quando tiver muitos eles irão vazar ou se tivermos um min-width definido. */
+}
+
+/* Utilizado para teste, retirar esse modelo como comnentário e alterar o de cima para comentário para visualizar o que foi feito.
+
+ .flex-container{
+    display: flex;
+    height: 150px;
+    border: 2px solid black;
+    max-width: 310px;
+    flex-direction: column;
+}
+*/
+.item{
+    font-size: 24px;
+    height: 50%;
+    text-align: center;
+    min-width: 100px;
+    /*min-width:100px - exemplo didático na utlização de muitos itens*/
+    line-height: 50px;
+}
+
+.nowrap{
+    flex-wrap: nowrap;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.orange {
+    background-color: orange;
+}
